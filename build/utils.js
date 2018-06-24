@@ -82,7 +82,8 @@ exports.styleLoaders = function (options) {
       cssLoader && (cssLoader.options = {
         sourceMap: options.sourceMap,
         modules: true,
-        localIdentName: '[name]--[local]--[hash:base64:5]'
+        camelCase:true,
+        localIdentName: '[name]--[local]__[hash:base64:5]'
       })
       // local
       output.push(Object.assign({}, object, { exclude: /node_modules/ },{ test: /.css$/ }))
