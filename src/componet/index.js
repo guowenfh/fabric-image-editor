@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import {fabric} from 'fabric'
+import { Layout, Menu, Breadcrumb, Icon, Badge } from 'antd'
+const { SubMenu } = Menu;
+const { Header, Content, Sider } = Layout;
 // import PropTypes from 'prop-types'
 
-export default class componentName extends Component {
+export default class Main extends Component {
   // static propTypes = {
 
   // }
